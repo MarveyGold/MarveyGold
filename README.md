@@ -60,7 +60,7 @@ Open-source learning
 
 X (Twitter): @MarveyGold
 GitHub: MarveyGold
-Email: (add your email if you want)
+Email: osoidaghemarvel@gmail.com
 
 
 ---
