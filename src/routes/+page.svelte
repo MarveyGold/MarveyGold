@@ -8,7 +8,7 @@
   import Whatsapp from "$lib/Icons/whatsapp.svelte";
   import React from "$lib/Icons/react.svelte";
   import Favicon from "$lib/assets/favicon.svg";
-  import { onMount } from "svelte";
+
   let { data } = $props();
   let info = $state(data);
   let subject = $state();
@@ -18,20 +18,19 @@
   function handleChange(e) {
     mail = e.target.value;
   }
-  onMount(() => {
-    function submit(e) {
-      e.preventDefault();
-      console.log(mail);
 
-      const Subject = encodeURIComponent(subject);
-      const Mail = encodeURIComponent(mail);
-      if (active === "mail") {
-        window.location.href = `mailto:osoidaghemarvel@gmail.com?subject=${Subject}&body=${Mail} `;
-      } else if (active === "whatsapp") {
-        window.location.href = `https://api.whatsapp.com/send?phone=2349045394806&text=${Mail}`;
-      }
+  function submit(e) {
+    e.preventDefault();
+    console.log(mail);
+
+    const Subject = encodeURIComponent(subject);
+    const Mail = encodeURIComponent(mail);
+    if (active === "mail") {
+      window.location.href = `mailto:osoidaghemarvel@gmail.com?subject=${Subject}&body=${Mail} `;
+    } else if (active === "whatsapp") {
+      window.location.href = `https://api.whatsapp.com/send?phone=2349045394806&text=${Mail}`;
     }
-  });
+  }
 </script>
 
 <main>
