@@ -275,7 +275,6 @@
     font-size: 0.75rem;
     color: var(--bold);
     animation: typing 10s steps(70) forwards;
-    width: max-content;
     mask: linear-gradient(90deg, #000 0%, #000 0%, transparent 0%);
     -webkit-mask: linear-gradient(90deg, #000 0%, #000 0%, transparent 0%);
   }
@@ -389,7 +388,11 @@
     color: var(--bg);
   }
    .hero {
-    margin: 5px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
    }
   .form button {
     display: flex;
