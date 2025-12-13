@@ -371,7 +371,7 @@
   }
   #contact {
     background-color: #1e293b;
-    margin-left: 5vw;
+    padding-left: 5vw;
     width: 90vw;
     height: 80dvh;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
