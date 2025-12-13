@@ -388,6 +388,9 @@
   .hero h1 {
     color: var(--bg);
   }
+   .hero {
+    margin: 5px;
+   }
   .form button {
     display: flex;
     align-items: center;
