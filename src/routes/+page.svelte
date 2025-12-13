@@ -395,6 +395,9 @@
     align-items: center;
     justify-content: center;
    }
+   .hero span {
+   gap: 10px;
+   }
   .form button {
     display: flex;
     align-items: center;
