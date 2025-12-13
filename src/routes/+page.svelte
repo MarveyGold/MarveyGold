@@ -273,6 +273,7 @@
   }
   #home div p {
     font-size: 0.75rem;
+    margin: 5px;
     color: var(--bold);
     animation: typing 10s steps(70) forwards;
     mask: linear-gradient(90deg, #000 0%, #000 0%, transparent 0%);
