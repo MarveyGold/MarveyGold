@@ -37,7 +37,7 @@
   <header>
     <nav>
       <button onclick={() => (nav == "open" ? (nav = "") : (nav = "open"))}
-        ><h2>≡</h2></button
+        ><h1>≡</h1></button
       >
       <ul class={nav}>
         <a href="#home"><li>Home</li></a>
@@ -417,6 +417,7 @@
   @media (max-width: 700px) {
     nav button {
       display: flex;
+      color: white;
     }
     .open {
       display: flex;
