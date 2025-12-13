@@ -196,7 +196,7 @@
   li {
     list-style: none;
   }
-  .hero {
+  .her {
     position: absolute;
     left: 2px;
   }
