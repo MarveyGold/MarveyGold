@@ -196,10 +196,6 @@
   li {
     list-style: none;
   }
-  .her {
-    position: absolute;
-    left: 2px;
-  }
   header {
     display: flex;
     justify-content: space-between;
@@ -259,8 +255,9 @@
     align-items: center;
   }
   #home div img {
-    width: 40vw;
-    border-radius: 40vw;
+    width: 36vw;
+    border-radius: 36vw;
+    overflow-x: hidden;
     margin-top: 40px;
     z-index: -1;
   }
