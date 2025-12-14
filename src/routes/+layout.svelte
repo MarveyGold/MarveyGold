@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-  <link rel="icon" href={favicon} />
+  <link rel="icon" href="icon.png" />
   <title>Marvellous Eromosele</title>
 </svelte:head>
 
