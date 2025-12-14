@@ -64,7 +64,8 @@
       </h1>
       <p>
         I build interactive web apps that captivate users and boost online
-        visibility
+        visibility. Specialized in React, Next.js, Svelte and modern CSS
+        frameworks.
       </p>
       <span>
         <button class="cta1"><b>Hire Me</b></button>
@@ -76,10 +77,17 @@
     <div>
       <h1>About Me</h1>
       <h4>
-        Experienced in building responsive web applications, from utilities like
-        scientific calculators to learning platforms (ExaminU) and promotional
-        websites (Fast Logistics). Proficient in modern technologies like
-        Next.js (App Router), React Native and Sveltekit
+        <div>
+          Experienced in building responsive web applications, from utilities
+          like scientific calculators to learning platforms (ExaminU) and
+          promotional websites.
+        </div>
+        <div>
+          Proficient in modern technologies like Next.js (App Router), React
+          Native, and SvelteKit. I am passionate about creating clean,
+          efficient, and user-friendly interfaces that solve real-world
+          problems.
+        </div>
       </h4>
     </div>
     <div class="about-right">
@@ -100,7 +108,13 @@
         <div class="project-list">
           {#each info.projects as project}
             <div class="box">
-              <h5 class="project-title">{project.title}</h5>
+              <img
+                src={`previews/${project.title.toLowerCase()}.png `}
+                alt=""
+                class="preview"
+              />
+              <h3 class="project-title">{project.title}</h3>
+
               <h6 class="detail">{@html project.description}</h6>
               <span>
                 <a href={project.link}
@@ -210,10 +224,7 @@
     top: 10vh;
     height: 20vh;
   }
-  h3 {
-    position: sticky;
-    top: -5vh;
-  }
+
   nav,
   nav ul {
     display: flex;
@@ -233,10 +244,12 @@
   }
   #home {
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
     background-image: url("/image.png");
     background-size: cover;
     background-position: center;
+    padding-top: 5rem;
   }
   #home::before {
     content: "";
@@ -252,11 +265,14 @@
   span {
     display: flex;
   }
+  #about {
+    height: 60dvh;
+  }
   section {
     height: 100dvh;
     width: 100vw;
     display: flex;
-    padding-top: 10vh;
+    padding-top: 5dvh;
     align-items: center;
   }
   #home div img {
@@ -308,6 +324,14 @@
   .stackList {
     display: flex;
   }
+  #about div h4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about div h4 div {
+    margin-bottom: 1.5rem;
+  }
   .about-right {
     width: 50vw;
     display: flex;
@@ -325,16 +349,17 @@
     flex-direction: column;
   }
   marquee {
-    width: 90vw;
+    width: 100vw;
   }
   .project-list {
     display: flex;
     flex-direction: row;
   }
   .box {
-    margin: 20px;
-    width: 25vw;
-    height: 40vh;
+    margin: 5vw;
+    width: 75vw;
+    height: 60dvh;
+    flex-shrink: 0;
     border-width: 1px;
     border-color: grey;
     border-radius: 40px;
@@ -348,6 +373,13 @@
   }
   .detail {
     height: 20vh;
+  }
+  .preview {
+    width: 75vw;
+    border-radius: 40px 40px 0 0;
+    border-bottom: none;
+    height: max(25dvh, 17vw);
+    flex-shrink: 0;
   }
   .form {
     display: flex;
@@ -368,12 +400,12 @@
     width: 60vw;
     border-radius: 1rem;
     padding: 0.5rem;
-    background-image: linear-gradient(white, rgb(242, 226, 238));
-    color: #0a0a0a;
+    background-color: var(--bg2);
+    color: #fafafa;
     border: 1px solid #ccc;
   }
   textarea {
-    height: 10vh;
+    height: 10dvh;
   }
   #contact {
     background-color: #1e293b;
