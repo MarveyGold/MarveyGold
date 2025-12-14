@@ -49,7 +49,7 @@
   </header>
 
   <header class="title">
-    <h3 class="blue">Marvellous Osoidaghe</h3>
+    <h2 class="blue">Marvellous Osoidaghe</h2>
   </header>
   <section id="home">
     <div>
@@ -223,8 +223,13 @@
     right: 10vw;
     z-index: 5;
   }
+  nav button {
+    position: fixed;
+    right: 1vw;
+  }
   nav ul li {
-    color: #581c87;
+    color: whitesmoke;
+    background-color: var(--bg);
   }
   #home {
     display: flex;
@@ -248,7 +253,7 @@
     display: flex;
   }
   section {
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     display: flex;
     padding-top: 10vh;
@@ -347,7 +352,7 @@
   .form {
     display: flex;
     flex-direction: column;
-    background-color: #1e293b;
+    background-color: var(--bg);
     justify-content: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     width: 80vw;
@@ -355,28 +360,27 @@
     align-items: center;
     height: 13rem;
     padding: 5vw;
+    gap: 15px;
+    border-radius: 1rem;
   }
   .form input,
   .form textarea {
-    width: 70vw;
-    border-radius: 2rem;
+    width: 60vw;
+    border-radius: 1rem;
     padding: 0.5rem;
     background-image: linear-gradient(white, rgb(242, 226, 238));
     color: #0a0a0a;
     border: 1px solid #ccc;
-    margin-top: 5px;
   }
   textarea {
     height: 10vh;
   }
   #contact {
     background-color: #1e293b;
-    padding-left: 5vw;
-    width: 90vw;
+    width: 100vw;
     height: 80dvh;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -385,16 +389,16 @@
   .hero h1 {
     color: var(--bg);
   }
-   .hero {
+  .hero {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-   }
-   .hero span {
-   gap: 10px;
-   }
+    margin: 5px;
+  }
+  .hero span {
+    gap: 10px;
+  }
   .form button {
     display: flex;
     align-items: center;
@@ -439,6 +443,7 @@
     }
     #home {
       flex-direction: column;
+      width: 100vw;
     }
     #home div img {
       width: 80vw;
