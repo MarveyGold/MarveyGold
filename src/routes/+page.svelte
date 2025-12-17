@@ -422,6 +422,9 @@
   .hero h1 {
     color: var(--bold);
     background-color: var(--bg);
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
   }
   .hero {
     width: 100vw;
