@@ -264,6 +264,7 @@
   }
   span {
     display: flex;
+    width: max-content;
   }
   #about {
     height: 60dvh;
