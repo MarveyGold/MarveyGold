@@ -57,10 +57,10 @@
     </div>
 
     <div class="hero">
-      <h1>
+      <h1><span class="bold" style="background-color:var(--bg);">
         Hi, I'm Marvellous - <span class="bold" style="background-color:var(--bg);">Front-End</span> Web and Mobile
         App
-        <span class="bold" style="background-color:var(--bg);"> Developer</span>
+        Developer</span>
       </h1>
       <p>
         I build interactive web apps that captivate users and boost online
