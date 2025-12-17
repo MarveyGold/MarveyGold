@@ -60,7 +60,7 @@
       <h1>
         Hi, I'm Marvellous - <span class="bold" style="background-color:var(--bg);">Front-End</span> Web and Mobile
         App
-        <span class="bold"> Developer</span>
+        <span class="bold" style="background-color:var(--bg);"> Developer</span>
       </h1>
       <p>
         I build interactive web apps that captivate users and boost online
