@@ -57,10 +57,10 @@
     </div>
 
     <div class="hero">
-      <h1><span class="bold" style="background-color:var(--bg);">
-        Hi, I'm Marvellous - <span class="bold" style="background-color:var(--bg);">Front-End</span> Web and Mobile
+      <h1>
+        Hi, I'm Marvellous - <span Front-End Web and Mobile
         App
-        Developer</span>
+        Developer
       </h1>
       <p>
         I build interactive web apps that captivate users and boost online
@@ -420,7 +420,8 @@
     align-items: center;
   }
   .hero h1 {
-    color: var(--bg);
+    color: var(--bold);
+    background-color: var(--bg);
   }
   .hero {
     width: 100vw;
