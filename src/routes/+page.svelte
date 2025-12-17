@@ -58,7 +58,7 @@
 
     <div class="hero">
       <h1>
-        Hi, I'm Marvellous - <span Front-End Web and Mobile
+        Hi, I'm Marvellous - Front-End Web and Mobile
         App
         Developer
       </h1>
