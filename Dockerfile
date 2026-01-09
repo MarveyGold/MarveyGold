@@ -1,25 +1,28 @@
 FROM node:20-bookworm-slim
 
-# 1. Enable Corepack (manages Yarn/PNPM versions)
+# 1. Enable Corepack
 RUN corepack enable
 
-# 2. Set working directory
+# 2. Optionally ensure Yarn is installed (skip if already present)
+RUN if ! command -v yarn > /dev/null; then corepack prepare yarn@stable --activate; fi
+
+# 3. Set working directory
 WORKDIR /app
 
-# 3. Copy dependency files first (for caching)
+# 4. Copy dependency files first (for caching)
 COPY package.json yarn.lock ./
 
-# 4. Install dependencies via Yarn
+# 5. Install dependencies
 RUN yarn install --frozen-lockfile
 
-# 5. Copy the rest of the app
+# 6. Copy the rest of the app
 COPY . .
 
-# 6. Build the app
+# 7. Build the app
 RUN yarn build
 
-# 7. expose port
-EXPOSE 5173
+# expose port if your app serves content
+ EXPOSE 5173
 
-# 8. Optional: command to run your app
- CMD ["yarn", "start"]
+# default command
+CMD ["yarn", "start"]
